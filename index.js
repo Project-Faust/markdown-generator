@@ -26,7 +26,7 @@ const questions = [
     {type: 'list',
     message: 'With which of the following licenses would you like to cover your project? (Use arrow keys to select).',
     name: 'license',
-    choices: ['MIT', ]
+    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3'],
     default: 'MIT'
     },
 ];

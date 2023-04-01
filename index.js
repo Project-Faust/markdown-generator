@@ -32,8 +32,12 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data)
+function createReadme(fileName, data
+) {
+    fs.writeFile(fileName, data, (error) => {
+        if (error) throw (error);
+        console.log(`README file ${fileName} has been created.`)
+    })
 }
 
 // TODO: Create a function to initialize app
@@ -43,7 +47,7 @@ function init() {
         .then((answers) => {
             const fileName = "README.md";
             const data = generateMarkdown(answers);
-            writeToFile(fileName, data)
+            createReadme(fileName, data)
         })
 };
 

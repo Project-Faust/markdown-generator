@@ -48,6 +48,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'What are instructions regarding contributions to your project?',
+        name: 'projectContribution'
+    },
+    {
+        type: 'input',
         message: 'What is a brief overview of testing instructions for your project?',
         name: 'projectTesting'
     },

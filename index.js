@@ -11,23 +11,52 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
-    {type: 'input',
-    message: 'What is your GitHub usermame?',
-    name: 'github',
+    {
+        type: 'input',
+        message: 'What is your name?',
+        name: 'authorName'
     },
-    {type: 'input',
-    message: 'What is your email address?',
-    name: 'email',
+    {
+        type: 'input',
+        message: 'What is your GitHub usermame?',
+        name: 'authorGithub',
     },
-    {type: 'input',
-    message: 'What is the title of your project?',
-    name: 'title',
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
     },
-    {type: 'list',
-    message: 'With which of the following licenses would you like to cover your project? (Use arrow keys to select).',
-    name: 'license',
-    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3'],
-    default: 'MIT'
+    {
+        type: 'input',
+        message: 'What is the title of your project?',
+        name: 'projectName',
+    },
+    {
+        type: 'input',
+        message: 'What is a brief description of your project?',
+        name: 'projectDescription'
+    },
+    {
+        type: 'input',
+        message: 'What is a brief overview of the installation instructions for your project?',
+        name: 'projectInstallation'
+    },
+    {
+        type: 'input',
+        message: 'What is a brief description of the usage guidelines for your project?',
+        name: 'projectUsage'
+    },
+    {
+        type: 'input',
+        message: 'What is a brief overview of testing instructions for your project?',
+        name: 'projectTesting'
+    },
+    {
+        type: 'list',
+        message: 'With which of the following licenses would you like to cover your project? (Use arrow keys to select).',
+        name: 'projectLicense',
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3'],
+        default: 'MIT'
     },
 ];
 

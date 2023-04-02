@@ -47,6 +47,7 @@ function generateMarkdown(data) {
     projectName,
     projectDescription,
     projectInstallation,
+    projectContribution,
     projectUsage,
     projectTesting,
     projectLicense
@@ -55,15 +56,36 @@ function generateMarkdown(data) {
   <img alt=License: ${license}" src="${licenseBadge}><br/>
   ## Table of Contents
   *[Author](#authorName)
-  *[Project Title](#authorGithub)
-  *[Project Description](#projectName)
-  *[Installation Instructions](#projectDescription)
-  *[Usage Information](#projectInstallation)
-  *[Contribution Guidelines](#projectUsage)
+  *[Project Title](#projectName)
+  *[Project Description](#projectDescription)
+  *[Installation Instructions](#projectInstallation)
+  *[Usage Information](#projectUsage)
+  *[Contribution Guidelines](#projectContribution)
   *[Test Instructions](#projectTesting)
   *[License](#projectLicense)
-  *[Support](#projectEmail)`
-
+  *[Support](#projectEmail)
+  # Project Creator
+  ${authorName}
+  # Project Name
+  ${projectName}
+  ## Description
+  ${projectDescription}
+  ## Installation Instructions
+  ${projectInstallation}
+  ## Usage
+  ${projectUsage}
+  ## Contribution Guidelines
+  ${projectContribution}
+  ## Testing
+  ${projectTesting}
+  ## License
+  <img alt="License: ${projectLicense}" src="${licenseBadge}"></br>
+  This project is licensed under the terms of the ${projectLicense} license. Click <a href="${licenseLink}">here</a> to view the full license text.
+  ## Support
+  ${authorEmail}
+  ## Questions
+  For questions or feedback, please reach out to me on GitHub <a href="https://github.com/${authorGithub}">here</a>.
+    `;
 }
 
 module.exports = generateMarkdown;

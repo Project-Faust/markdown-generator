@@ -47,7 +47,7 @@ function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(projectLicense);
   const licenseLink = renderLicenseLink(projectLicense);
   return `
-  <img alt="License: ${projectLicense}" src="${licenseBadge}"/>
+  <img alt="License: ${projectLicense}" src="${licenseBadge}"/><br/>
   ## Table of Contents
   * [Author](#authorName)
   * [Project Title](#projectName)

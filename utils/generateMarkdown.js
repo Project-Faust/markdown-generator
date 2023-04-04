@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(projectLicense) {
+  // sequence of 'if/else' statements returns information accordingly
   if (projectLicense === "MIT") {
     return "https://img.shields.io/badge/License-MIT-yellow.svg";
   } else if (projectLicense === "Apache 2.0") {
@@ -17,6 +18,7 @@ function renderLicenseBadge(projectLicense) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(projectLicense) {
+  // sequence of 'if/else' statements returns information accordingly
   if (projectLicense === "MIT") {
     return "https://opensource.org/licenses/MIT";
   } else if (projectLicense === "Apache 2.0") {
@@ -32,6 +34,7 @@ function renderLicenseLink(projectLicense) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  // declares data variables to be used in README
   const {
     authorName,
     authorGithub,
@@ -44,8 +47,10 @@ function generateMarkdown(data) {
     projectTesting,
     projectLicense
   } = data
+  // assign license badge and link to variables declared previously
   const licenseBadge = renderLicenseBadge(projectLicense);
   const licenseLink = renderLicenseLink(projectLicense);
+  // populates readme file with a framework of data filled in with variables provided by the users
   return `
   <img alt="License: ${projectLicense}" src="${licenseBadge}"/><br/>
   ## Table of Contents

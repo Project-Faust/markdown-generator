@@ -18,19 +18,19 @@
   README Generator
 
   ## Description
-  This is a command line application that prompts the user for information regarding his or her project to create a README.md file based off of a template.
+  This is a command line application that prompts to the user for information regarding his or her project to create a README.md file based off of a template.
 
   ## Installation Instructions
   After downloading the files, run index.js in your command line interface of choice and respond to the prompts.
 
   ## Usage
-  Usage for this application is straightforward and only requires a CLI and the required files.
+  Usage for the application is straightforward and only requires a CLI and the required files.
 
   ## Contribution Guidelines
-  Please email me or direct message me on GitHub to discuss contributions and forks.
+  Please email me of direct message me on GitHub to discuss contributions and forks.
 
   ## Testing
-  Try to break the application to your heart's content. It's how we learn and adapt as developers.
+  Try and break the application to your heart's content. It's how we learn and adapt as developers.
 
   ## License
   <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></br>

@@ -1,5 +1,3 @@
-// TODO: Include packages needed for this application
-
 // provides UI and question flow
 const inquirer = require("inquirer");
 
@@ -68,8 +66,11 @@ const questions = [
 // TODO: Create a function to write README file
 function createReadme(fileName, data
 ) {
+    // creates file
     fs.writeFile(fileName, data, (error) => {
+        // logs error if applicable
         if (error) throw (error);
+        // logs if file is successfully created
         console.log(`README file ${fileName} has been created.`)
     })
 }
